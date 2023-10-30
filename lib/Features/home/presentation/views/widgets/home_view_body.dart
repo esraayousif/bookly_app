@@ -1,7 +1,9 @@
+import 'package:bookly_app/core/utils/assets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_appbar.dart';
+import 'custom_listview_item.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -11,7 +13,9 @@ class HomeViewBody extends StatelessWidget {
     return const Column(
       children: [
         CustomAppBar(),
+        CustomListViewItem(),
       ],
     );
   }
 }
+
