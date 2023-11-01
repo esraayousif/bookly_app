@@ -1,4 +1,3 @@
-import 'package:bookly_app/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 
@@ -10,7 +9,7 @@ abstract class Styles{
   static const textStyle20 = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.normal,
-    fontFamily:KGtSectraFine,
+
   );
   static const textStyle30 = TextStyle(
     fontSize: 30,
