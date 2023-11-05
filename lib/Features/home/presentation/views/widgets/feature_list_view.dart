@@ -2,7 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 
-import 'custom_listview_item.dart';
+import 'custom_book_image.dart';
 
 class FeatherBooksListView extends StatelessWidget {
   const FeatherBooksListView({super.key});
@@ -16,7 +16,7 @@ class FeatherBooksListView extends StatelessWidget {
           itemBuilder: (context, index) {
             return const Padding(
               padding:  EdgeInsets.symmetric(horizontal: 8),
-              child: FeatureListViewItem(),
+              child: CustomBookImage(),
             );
           }),
     );
