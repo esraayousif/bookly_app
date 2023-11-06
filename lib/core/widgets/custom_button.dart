@@ -6,13 +6,16 @@ class CustomButton extends StatelessWidget {
       {super.key,
       required this.backgroundColor,
       required this.textColor,
-       this.borderRadius});
+      this.borderRadius,
+      required this.text,
+      this.fontSize});
 
+
+  final String text;
   final Color backgroundColor;
-
   final Color textColor;
-
   final BorderRadius? borderRadius;
+  final double? fontSize;
 
   @override
   Widget build(BuildContext context) {
@@ -23,13 +26,15 @@ class CustomButton extends StatelessWidget {
         style: TextButton.styleFrom(
           backgroundColor: backgroundColor,
           shape: RoundedRectangleBorder(
-            borderRadius:borderRadius ?? BorderRadius.circular(12),
+            borderRadius: borderRadius ?? BorderRadius.circular(12),
           ),
         ),
         child: Text(
-          '19.99 € ',
-          style: Styles.textStyle18
-              .copyWith(color: textColor, fontWeight: FontWeight.w900),
+          text,
+          style: Styles.textStyle18.copyWith(
+              color: textColor,
+              fontWeight: FontWeight.w900,
+              fontSize: fontSize),
         ),
       ),
     );
