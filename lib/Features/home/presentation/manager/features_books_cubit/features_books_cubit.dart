@@ -6,8 +6,8 @@ import '../../../data/models/BookModel.dart';
 
 part 'features_books_state.dart';
 
-class FeaturesBooksStateCubit extends Cubit<FeaturesBooksState> {
-  FeaturesBooksStateCubit(this.homeRepo) : super(FeaturesBooksStateInitial());
+class FeaturesBooksCubit extends Cubit<FeaturesBooksState> {
+  FeaturesBooksCubit(this.homeRepo) : super(FeaturesBooksStateInitial());
   final HomeRepo homeRepo;
 
   Future<void> fetchFeaturedBooks() async {
