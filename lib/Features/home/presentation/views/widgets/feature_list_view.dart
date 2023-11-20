@@ -27,7 +27,7 @@ class FeatherBooksListView extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return  Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
-                    child: CustomBookImage(imageUrl: state.books[index].volumeInfo?.imageLinks?.thumbnail ?? "",),
+                    child: CustomBookImage(imageUrl: state.books[index].volumeInfo?.imageLinks?.thumbnail ?? "https://cdn4.iconfinder.com/data/icons/ui-beast-4/32/Ui-12-1024.png",),
                   );
                 }),
           );
