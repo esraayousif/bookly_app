@@ -19,7 +19,7 @@ class FeatherBooksListView extends StatelessWidget {
             height: MediaQuery
                 .of(context)
                 .size
-                .height * .3,
+                .height * .25,
             child: ListView.builder(
               physics: const BouncingScrollPhysics(),
               itemCount: state.books.length,
